@@ -36,9 +36,9 @@ public class Member {
 	}
 
 	
-	public Member(String id, String name, String email) {
+	public Member(String id, String pwd, String email) {
 		this.id=id;
-		this.name=name;
+		this.pwd=pwd;
 		this.email=email;
 	}
 	

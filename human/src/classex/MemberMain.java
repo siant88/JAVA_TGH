@@ -37,6 +37,9 @@ public class MemberMain {
 			System.out.println("회원조회");
 			ms.searchData();
 			break;
+		case 3 : ms.deleteData();break;
+		case 4 : ms.updateData();break;
+		case 5 : ms.totalPrint();break;
 		case 6 : 
 			System.out.println("프로그램을 종료함");
 			System.exit(0);

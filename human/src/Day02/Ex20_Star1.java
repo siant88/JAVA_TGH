@@ -1,8 +1,8 @@
-package cl1300;
+package Day02;
 
 import java.util.Scanner;
 
-public class te1353 {
+public class Ex20_Star1 {
 
 	public static void main(String[] args) {
 		

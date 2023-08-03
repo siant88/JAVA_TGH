@@ -5,7 +5,7 @@ package classex;
 
 public class MemberService {
 
-	final int MAX_CNT=100;
+	final int MAX_CNT=4;
 			int cnt=0;
 			
 	Member[] member = new Member[MAX_CNT];
@@ -79,8 +79,11 @@ public class MemberService {
 		System.out.print("ID : ");
 		String id = InputScanner.sc.next();
 		int index = search(id);
-		if(index<0)
-			System.out.println("데이터가 없음");
+		if(index<0 || index+1 == cnt)
+			{System.out.println("데이터가 없음");
+			member[index]=new Member();}
+		
+		
 		else {
 		// 해당 검색 데이터를 출력한다
 		   for (int i = index; i < cnt; i++) {
@@ -99,10 +102,6 @@ public class MemberService {
 			System.out.println(member[i]);
 		}
 	}
-	
-	
-		
-		
 	
 	
 	
